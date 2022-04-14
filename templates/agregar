@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar nuevo Slang</title>
+</head>
+<body>
+    <h4>Introduzca Slang y definicion</h4>
+    <form action="http://localhost:5000/agregado/" method="post"/>
+        <p>Palabra: </p>
+        <p><input type="text" name="palabra"/></p>
+        <p>Definicion: </p>
+        <p><input type="text" name="definicion"/></p>
+        <p><input type="submit" name="enviar"/></p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve Flask_
+After=network.target
+
+[Service]
+User=jose
+Group=www=data
+WorkingDirectory=/home/jose/Desktop/Flask_
+Enviroment="PATH=/home/jose/Desktop/Flask_/Flask_/bin"
+ExecStart=/home/jose/Desktop/Flask_/Flask_/Flask_/bin/gunicorn --workers 3 --bind unix:Flask_.sock -m 007 wsgi:app
+
+[Install]
+WantedBy=multi-user.target
